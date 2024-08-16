@@ -1,2 +1,3 @@
-# data-dunkers-modules
-Modules for Data Dunkers
+# Data Dunkers Data
+
+Data files for Data Dunkers lessons and activities.
