@@ -1,0 +1,31 @@
+Rank,League,Division,DivisionRank,Team,W,L,PCT,GB,HOME,AWAY,RS,RA,DIFF,STRK,L10
+1,AL,East,1,New York Yankees,87,74,.540,-,44-36,43-38,871,814,+57,L7,2-8
+2,AL,East,2,Boston Red Sox,85,77,.525,2.5,42-39,43-38,792,745,+47,L1,5-5
+3,AL,East,3,Toronto Blue Jays,83,79,.512,4.5,45-36,38-43,861,908,-47,L4,2-8
+4,AL,East,4,Baltimore Orioles,74,88,.457,13.5,44-37,30-51,794,913,-119,W4,7-3
+5,AL,East,5,Tampa Bay Rays,69,92,.429,18,36-44,33-48,733,842,-109,W1,8-2
+6,AL,Central,1,Chicago White Sox,95,67,.586,-,46-35,49-32,978,839,+139,L1,4-6
+7,AL,Central,2,Cleveland Guardians,90,72,.556,5,48-33,42-39,950,816,+134,W3,7-3
+8,AL,Central,3,Detroit Tigers,79,83,.488,16,43-38,36-45,823,827,-4,W3,5-5
+9,AL,Central,4,Kansas City Royals,77,85,.475,18,42-39,35-46,879,930,-51,W1,7-3
+10,AL,Central,5,Minnesota Twins,69,93,.426,26,36-45,33-48,748,880,-132,L3,3-7
+11,AL,West,1,Oakland Athletics,91,70,.565,-,47-34,44-36,947,813,+134,W3,8-2
+12,AL,West,2,Seattle Mariners,91,71,.562,0.5,47-34,44-37,907,780,+127,W2,5-5
+13,AL,West,3,Anaheim Angels,82,80,.506,9.5,46-35,36-45,864,869,-5,L2,5-5
+14,AL,West,4,Texas Rangers,71,91,.438,20.5,42-39,29-52,848,974,-126,L3,2-8
+15,NL,East,1,Atlanta Braves,95,67,.586,-,51-30,44-37,810,714,+96,L1,5-5
+16,NL,East,2,New York Mets,94,68,.580,1,55-26,39-42,807,738,+69,W5,8-2
+17,NL,East,3,Florida Marlins,79,82,.491,15.5,43-38,36-44,731,797,-66,W6,8-2
+18,NL,East,4,Montreal Expos,67,95,.414,28,37-44,30-51,738,902,-164,L9,1-9
+19,NL,East,5,Philadelphia Phillies,65,97,.401,30,34-47,31-50,708,830,-122,L3,2-8
+20,NL,Central,1,St. Louis Cardinals,95,67,.586,-,50-31,45-36,887,771,+116,W1,5-5
+21,NL,Central,2,Cincinnati Reds,85,77,.525,10,43-38,42-39,825,765,+60,L1,6-4
+22,NL,Central,3,Milwaukee Brewers,73,89,.451,22,42-39,31-50,740,826,-86,L2,6-4
+23,NL,Central,4,Houston Astros,72,90,.444,23,39-42,33-48,938,944,-6,W2,4-6
+24,NL,Central,5,Pittsburgh Pirates,69,93,.426,26,37-44,32-49,793,888,-95,L1,5-5
+25,NL,Central,6,Chicago Cubs,65,97,.401,30,38-43,27-54,764,904,-140,W1,5-5
+26,NL,West,1,San Francisco Giants,97,65,.599,-,55-26,42-39,925,747,+178,W1,5-5
+27,NL,West,2,Los Angeles Dodgers,86,76,.531,11,44-37,42-39,798,729,+69,L1,6-4
+28,NL,West,3,Arizona Diamondbacks,85,77,.525,12,47-34,38-43,792,754,+38,L1,5-5
+29,NL,West,4,Colorado Rockies,82,80,.506,15,48-33,34-47,968,897,+71,W1,5-5
+30,NL,West,5,San Diego Padres,76,86,.469,21,41-40,35-46,752,815,-63,W1,2-8

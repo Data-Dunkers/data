@@ -1,0 +1,15 @@
+Rank,TeamCode,Team,W,L,PCT,GF,GA,DIFF
+1,BUF,Buffalo Bandits,13,5,0.722,242,195,47
+2,SAS,Saskatchewan Rush,13,5,0.722,213,179,34
+3,HFX,Halifax Thunderbirds,11,7,0.611,239,213,26
+4,VAN,Vancouver Warriors,11,7,0.611,196,172,24
+5,ROC,Rochester Knighthawks,10,8,0.556,228,209,19
+6,CGY,Calgary Roughnecks,10,8,0.556,219,209,10
+7,GA,Georgia Swarm,9,9,0.5,214,217,-3
+8,SD,San Diego Seals,9,9,0.5,215,209,6
+9,OTT,Ottawa Black Bears,8,10,0.444,183,202,-19
+10,COL,Colorado Mammoth,8,10,0.444,195,212,-17
+11,ALB,Albany FireWolves,7,11,0.389,192,209,-17
+12,PHI,Philadelphia Wings,7,11,0.389,207,231,-24
+13,TOR,Toronto Rock,6,12,0.333,189,208,-19
+14,LV,Las Vegas Desert Dogs,4,14,0.222,189,256,-67
