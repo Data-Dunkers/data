@@ -1,7 +1,6 @@
 Name,Year,Team,P,G,A
 Adam Wharton,2025,Crystal Palace,0.0,0.0,5.0
 Alejandro Garnacho,2025,Chelsea,0.0,0.0,4.0
-Anthony Gordon,2025,Newcastle United,24.0,5.0,0.0
 Antoine Semenyo,2025,Manchester City,29.0,15.0,4.0
 Benjamin Sesko,2025,Manchester United,25.0,9.0,0.0
 Bernardo Silva,2025,Manchester City,0.0,0.0,4.0
@@ -14,6 +13,7 @@ Casemiro,2025,Manchester United,28.0,7.0,0.0
 Cody Gakpo,2025,Liverpool,28.0,6.0,3.0
 Cole Palmer,2025,Chelsea,20.0,9.0,0.0
 Crysencio Summerville,2025,West Ham United,24.0,5.0,0.0
+Dango Ouattara,2025,Brentford,24.0,5.0,0.0
 Danny Welbeck,2025,Brighton & Hove Albion,29.0,10.0,0.0
 Declan Rice,2025,Arsenal,0.0,0.0,5.0
 Diego Gómez,2025,Brighton & Hove Albion,27.0,5.0,0.0
@@ -33,7 +33,7 @@ Harry Wilson,2025,Fulham,28.0,9.0,6.0
 Harvey Barnes,2025,Newcastle United,29.0,5.0,0.0
 Hugo Ekitike,2025,Liverpool,27.0,11.0,4.0
 Igor Jesus,2025,Nottingham Forest,0.0,0.0,3.0
-Igor Thiago,2025,Brentford,29.0,18.0,0.0
+Igor Thiago,2025,Brentford,30.0,19.0,0.0
 Iliman Ndiaye,2025,Everton,24.0,5.0,0.0
 Ismaïla Sarr,2025,Crystal Palace,20.0,7.0,0.0
 Jack Grealish,2025,Everton,0.0,0.0,6.0
@@ -45,7 +45,7 @@ João Pedro,2025,Chelsea,30.0,14.0,5.0
 Junior Kroupi,2025,AFC Bournemouth,25.0,8.0,0.0
 Jurriën Timber,2025,Arsenal,0.0,0.0,5.0
 Jérémy Doku,2025,Manchester City,0.0,0.0,4.0
-Kevin Schade,2025,Brentford,26.0,7.0,0.0
+Kevin Schade,2025,Brentford,27.0,7.0,0.0
 Kiernan Dewsbury-Hall,2025,Everton,23.0,6.0,0.0
 Leandro Trossard,2025,Arsenal,26.0,5.0,5.0
 Lucas Digne,2025,Aston Villa,0.0,0.0,4.0
