@@ -1,16 +1,16 @@
 Rank,Year,TeamCode,Team,W,L,PCT,GF,GA,DIFF
-1,2025,SAS,Saskatchewan Rush,11,3,0.786,169,133,36
-2,2025,VAN,Vancouver Warriors,10,4,0.714,160,130,30
-3,2025,COL,Colorado Mammoth,9,5,0.643,158,139,19
-4,2025,GA,Georgia Swarm,8,5,0.615,127,106,21
-5,2025,TOR,Toronto Rock,8,5,0.615,147,144,3
-6,2025,OTT,Ottawa Black Bears,8,6,0.571,158,159,-1
-7,2025,BUF,Buffalo Bandits,7,6,0.538,147,145,2
-8,2025,SD,San Diego Seals,6,7,0.462,133,138,-5
-9,2025,LV,Las Vegas Desert Dogs,5,7,0.417,149,153,-4
-10,2025,ROC,Rochester Knighthawks,5,7,0.417,140,154,-14
-11,2025,HFX,Halifax Thunderbirds,5,8,0.385,129,135,-6
-12,2025,CGY,Calgary Roughnecks,4,9,0.308,134,156,-22
+1,2025,SAS,Saskatchewan Rush,11,4,0.733,178,146,32
+2,2025,VAN,Vancouver Warriors,11,4,0.733,170,138,32
+3,2025,COL,Colorado Mammoth,10,5,0.667,172,151,21
+4,2025,GA,Georgia Swarm,9,5,0.643,144,122,22
+5,2025,TOR,Toronto Rock,9,5,0.643,160,153,7
+6,2025,BUF,Buffalo Bandits,8,6,0.571,156,153,3
+7,2025,OTT,Ottawa Black Bears,8,7,0.533,166,169,-3
+8,2025,LV,Las Vegas Desert Dogs,6,7,0.462,166,166,0
+9,2025,SD,San Diego Seals,6,8,0.429,141,147,-6
+10,2025,ROC,Rochester Knighthawks,5,8,0.385,153,171,-18
+11,2025,HFX,Halifax Thunderbirds,5,9,0.357,145,152,-7
+12,2025,CGY,Calgary Roughnecks,4,10,0.286,146,170,-24
 13,2025,OSH,Oshawa FireWolves,4,10,0.286,139,163,-24
 14,2025,PHI,Philadelphia Wings,3,11,0.214,126,161,-35
 1,2024,BUF,Buffalo Bandits,13,5,0.722,242,195,47
