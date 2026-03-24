@@ -4,7 +4,7 @@ Rank,Division,DivisionRank,Team,GP,W,L,OTL,PTS,RW,ROW,SOW,SOL,HOME,AWAY,GF,GA,DI
 3,Atlantic,3,Montreal Canadiens,69,38,21,10,86,26,36,2,5,20-13-2,18-8-8,244,228,+16,5-4-1,W1
 4,Atlantic,4,Boston Bruins,70,39,23,8,86,29,36,3,3,26-9-1,13-14-7,234,217,+17,5-2-3,W2
 5,Atlantic,5,Detroit Red Wings,70,38,24,8,84,27,36,2,3,20-12-3,18-12-5,205,208,-3,4-4-2,L1
-6,Atlantic,6,Ottawa Senators,69,36,24,9,81,30,33,3,0,18-11-5,18-13-4,234,213,+21,7-2-1,W2
+6,Atlantic,6,Ottawa Senators,70,37,24,9,83,31,34,3,0,18-11-5,19-13-4,236,214,+22,8-2-0,W3
 7,Atlantic,7,Florida Panthers,69,34,32,3,71,27,30,4,1,18-14-3,16-18-0,206,229,-23,4-6-0,L1
 8,Atlantic,8,Toronto Maple Leafs,71,29,29,13,71,21,28,1,4,17-12-8,12-17-5,221,250,-29,2-5-3,L3
 9,Metropolitan,1,Carolina Hurricanes,70,45,19,6,96,32,40,5,3,25-9-2,20-10-4,250,206,+44,7-3-0,W3
@@ -14,7 +14,7 @@ Rank,Division,DivisionRank,Team,GP,W,L,OTL,PTS,RW,ROW,SOW,SOL,HOME,AWAY,GF,GA,DI
 13,Metropolitan,5,Philadelphia Flyers,69,34,23,12,80,21,25,9,4,15-11-8,19-12-4,202,211,-9,7-2-1,W3
 14,Metropolitan,6,Washington Capitals,71,35,27,9,79,30,34,1,6,22-11-5,13-16-4,220,208,+12,4-4-2,L1
 15,Metropolitan,7,New Jersey Devils,69,35,32,2,72,23,31,4,0,18-15-2,17-17-0,187,209,-22,7-3-0,L1
-16,Metropolitan,8,New York Rangers,70,28,33,9,65,19,25,3,1,9-17-7,19-16-2,198,224,-26,5-4-1,L4
+16,Metropolitan,8,New York Rangers,71,28,34,9,65,19,25,3,1,9-18-7,19-16-2,199,226,-27,4-5-1,L5
 17,Central,1,Colorado Avalanche,69,46,13,10,102,40,43,3,6,23-6-5,23-7-5,257,175,+82,6-3-1,W2
 18,Central,2,Dallas Stars,70,43,16,11,97,33,38,5,4,22-9-4,21-7-7,240,190,+50,6-2-2,L2
 19,Central,3,Minnesota Wild,71,40,19,12,92,25,36,4,5,20-10-8,20-9-4,233,202,+31,5-3-2,W1

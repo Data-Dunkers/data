@@ -4,7 +4,7 @@ Rank,Division,DivisionRank,Team,GP,W,L,OTL,SOL,PTS,PCT,RW,ROW,GF,GA,DIFF,L10,STR
 9,Atlantic Division,3,Charlotte Checkers,62,37,20,5,0,79,0.637,30,35,208,170,38,7-2-1-0,2-0-0-0,731,10
 20,Atlantic Division,4,Hershey Bears,62,27,26,6,3,63,0.508,21,26,179,200,-21,3-6-0-1,0-3-0-1,888,10
 22,Atlantic Division,5,Bridgeport Islanders,61,26,27,3,5,60,0.492,21,23,180,189,-9,5-4-0-1,2-0-0-0,751,11
-23,Atlantic Division,6,Lehigh Valley Phantoms,62,27,29,3,3,60,0.484,18,23,184,209,-25,3-6-1-0,0-2-0-0,819,10
+23,Atlantic Division,6,Lehigh Valley Phantoms,62,27,29,3,3,60,0.484,18,23,184,209,-25,3-6-1-0,0-2-0-0,821,10
 25,Atlantic Division,7,Springfield Thunderbirds,61,25,28,6,2,58,0.475,22,24,169,212,-43,5-3-2-0,1-0-0-0,686,11
 27,Atlantic Division,8,Hartford Wolf Pack,62,24,32,4,2,54,0.435,20,23,168,214,-46,4-6-0-0,0-2-0-0,991,10
 5,North Division,1,Laval Rocket,63,39,19,2,3,83,0.659,28,34,207,167,40,6-4-0-0,3-0-0-0,1018,9
@@ -16,8 +16,8 @@ Rank,Division,DivisionRank,Team,GP,W,L,OTL,SOL,PTS,PCT,RW,ROW,GF,GA,DIFF,L10,STR
 29,North Division,7,Utica Comets,61,22,30,5,4,53,0.434,19,20,161,197,-36,5-5-0-0,0-3-0-0,745,11
 2,Central Division,1,Grand Rapids Griffins,61,44,13,3,1,92,0.754,37,41,205,128,77,4-6-0-0,0-2-0-0,684,11
 16,Central Division,2,Chicago Wolves,60,29,19,6,6,70,0.583,22,27,187,192,-5,2-7-0-1,0-4-0-0,788,12
-17,Central Division,3,Texas Stars,60,31,25,3,1,66,0.550,22,27,184,192,-8,7-3-0-0,0-1-0-0,586,12
-19,Central Division,4,Manitoba Moose,58,29,23,5,1,64,0.552,25,26,149,165,-16,5-4-1-0,0-1-0-0,697,14
+18,Central Division,3,Texas Stars,60,31,25,3,1,66,0.550,22,27,184,192,-8,7-3-0-0,0-1-0-0,586,12
+19,Central Division,4,Manitoba Moose,59,29,24,5,1,64,0.542,25,26,150,169,-19,5-5-0-0,0-2-0-0,703,13
 24,Central Division,5,Milwaukee Admirals,59,26,26,4,3,59,0.500,17,26,169,173,-4,6-4-0-0,1-0-0-0,953,13
 30,Central Division,6,Rockford IceHogs,62,24,33,3,2,53,0.427,18,23,171,207,-36,5-4-1-0,2-0-0-0,1106,10
 31,Central Division,7,Iowa Wild,59,22,31,5,1,50,0.424,16,20,144,184,-40,7-2-1-0,1-0-0-0,736,13
@@ -28,6 +28,6 @@ Rank,Division,DivisionRank,Team,GP,W,L,OTL,SOL,PTS,PCT,RW,ROW,GF,GA,DIFF,L10,STR
 11,Pacific Division,5,Coachella Valley Firebirds,60,34,21,5,0,73,0.608,22,30,201,185,16,7-3-0-0,2-0-0-0,865,12
 13,Pacific Division,6,Henderson Silver Knights,61,31,20,6,4,72,0.590,27,30,221,196,25,7-2-0-1,1-0-0-0,735,11
 15,Pacific Division,7,San Diego Gulls,62,29,21,8,4,70,0.565,23,27,189,190,-1,5-5-0-0,2-0-0-0,675,10
-18,Pacific Division,8,Tucson Roadrunners,60,28,23,9,0,65,0.542,16,27,192,205,-13,5-4-1-0,3-0-1-0,670,12
+17,Pacific Division,8,Tucson Roadrunners,61,29,23,9,0,67,0.549,17,28,196,206,-10,6-3-1-0,4-0-1-0,678,11
 28,Pacific Division,9,Calgary Wranglers,63,20,29,10,4,54,0.429,11,18,173,234,-61,1-7-0-2,0-5-0-0,908,9
 32,Pacific Division,10,Abbotsford Canucks,64,22,36,3,3,50,0.391,14,17,146,218,-72,3-7-0-0,0-5-0-0,869,8
