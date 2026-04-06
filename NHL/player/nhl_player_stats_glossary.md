@@ -1,7 +1,8 @@
 | Stat | Description                       | Stat | Description                              |
 |------|-----------------------------------|------|------------------------------------------|
 | Name | Player full name | POS | Player position |
-| GP | Games played | G | Games played (team) or goals (player), depending on dataset |
+| Year | Season start year |  |  |
+| GP | Games played | G | Goals |
 | A | Assists | PTS | Points |
 | +/- | Plus/minus rating | PIM | Penalty minutes |
 | TOI/G | Average time on ice per game | PPG | Power-play goals |

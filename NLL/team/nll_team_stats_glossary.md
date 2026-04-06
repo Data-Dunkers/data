@@ -3,6 +3,8 @@
 | Column | Description |
 |---|---|
 | Team | Team name. |
+| Year | Season start year. |
+| Season | Season label from source. |
 | GP | Team games played (team-level season value). |
 | G | Team goals scored. |
 | A | Team assists. |

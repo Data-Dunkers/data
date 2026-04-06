@@ -1,8 +1,9 @@
 | Stat | Description                       | Stat | Description                              |
 |------|-----------------------------------|------|------------------------------------------|
 | Player | Player full name | Age | Player age |
+| Year | Season start year |  |  |
 | Team | Team name | Lg | League code |
-| WAR | Wins Above Replacement | G | Games played (team) or goals (player), depending on dataset |
+| WAR | Wins Above Replacement | G | Games played |
 | PA | Plate appearances | AB | At-bats |
 | R | Runs scored | H | Hits |
 | 2B | Doubles | 3B | Triples |

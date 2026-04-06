@@ -3,6 +3,7 @@
 | Column | Description |
 |---|---|
 | Rank | League standing row order in source output. |
+| Year | Season start year. |
 | League | League label (`AL` or `NL`). |
 | Division | Division label from source table (`East`, `Central`, `West`). |
 | DivisionRank | Rank within the division in source order. |

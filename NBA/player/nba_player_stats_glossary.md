@@ -1,6 +1,7 @@
 | Stat | Description                       | Stat | Description                              |
 |------|-----------------------------------|------|------------------------------------------|
 | Name | Player full name | POS | Player position |
+| Year | Season start year |  |  |
 | GP | Games played | MIN | Minutes per game |
 | PTS | Points | FGM | Field goals made per game |
 | FGA | Field goals attempted per game | FG% | Field goal percentage |

@@ -2,7 +2,8 @@
 |------|-----------------------------------|------|------------------------------------------|
 | Tm | Team abbreviation/name from source | #Bat | Number of batters used |
 | BatAge | Team batting age | R/G | Runs scored per game |
-| G | Games played (team) or goals (player), depending on dataset | PA | Plate appearances |
+| Year | Season start year |  |  |
+| G | Games played | PA | Plate appearances |
 | AB | At-bats | R | Runs scored |
 | H | Hits | 2B | Doubles |
 | 3B | Triples | HR | Home runs |

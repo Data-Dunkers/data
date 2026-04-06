@@ -2,6 +2,23 @@
 
 | Column | Description |
 |---|---|
-| Status | No approved source endpoint yet for NLL player stats in this repo. |
-| Planned Output | File pattern will follow `nll_player_stats_<season>.csv` once source is approved. |
-| Planned Key Field | `Name` (player name) and `Team` (club) are expected to be required fields. |
+| Name | Player name. |
+| Year | Season start year. |
+| Season | Season label from source. |
+| Team | Team name. |
+| P | Position (for example `F`, `D`, `G`, `T`). |
+| GP | Games played. |
+| G | Goals. |
+| A | Assists. |
+| PTS | Points (`G + A`). |
+| PIM | Penalty minutes. |
+| PPG | Power-play goals. |
+| PPA | Power-play assists. |
+| SHG | Short-handed goals. |
+| LB | Loose balls recovered. |
+| TO | Turnovers. |
+| CTO | Caused turnovers. |
+| BLK | Blocked shots. |
+| SOG | Shots on goal. |
+| FO | Faceoffs, typically shown as wins/attempts (for example `45/88`). |
+| FO% | Faceoff percentage. |

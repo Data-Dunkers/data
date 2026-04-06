@@ -1,6 +1,7 @@
 | Stat | Description                       | Stat | Description                              |
 |------|-----------------------------------|------|------------------------------------------|
 | Rk | Rank on source leaderboard/table | Team | Team name |
+| Year | Season start year |  |  |
 | Season Leaders_Regular Season | Regular-season leaders text from source table | Season Leaders_Playoffs | Playoff leaders text from source table |
 | Unnamed: 4_level_0_ATT. | Source artifact column (ATT.) retained from source table | Age_AA | Average age (AA) from source |
 | Age_WAA | Weighted average age (WAA) from source | Player Stats_GP | Team total games played (player stats section) |

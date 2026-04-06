@@ -3,6 +3,7 @@
 | Column | Description |
 |---|---|
 | Rank | League standing row order in source output. |
+| Year | Season start year. |
 | Conference | Conference label (`Eastern` or `Western`). |
 | ConferenceRank | Rank within the conference in source order. |
 | Team | Team name. |

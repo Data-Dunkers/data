@@ -3,6 +3,7 @@
 | Column | Description |
 |---|---|
 | Rank | Standings rank from source order (1 = best). |
+| Year | Season start year. |
 | TeamCode | ESPN team abbreviation parsed from standings table. |
 | Team | Team name. |
 | W | Wins. |

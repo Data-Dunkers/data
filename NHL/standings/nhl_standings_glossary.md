@@ -3,6 +3,7 @@
 | Column | Description |
 |---|---|
 | Rank | League standing row order in source output. |
+| Year | Season start year. |
 | Division | Division label from standings section (for example `Atlantic`, `Metropolitan`, `Central`, `Pacific`). |
 | DivisionRank | Rank within the division block in source order. |
 | Team | Team name. |

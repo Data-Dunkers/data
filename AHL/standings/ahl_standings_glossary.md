@@ -3,6 +3,8 @@
 | Column | Description |
 |---|---|
 | Rank | League-wide standing rank. |
+| Year | Season start year. |
+| Season | Season label from source. |
 | Division | Division label from source standings. |
 | DivisionRank | Team rank within division. |
 | Team | Team name. |

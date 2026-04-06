@@ -3,6 +3,7 @@
 | Column | Description |
 |---|---|
 | Rank | League standing rank in source order. |
+| Year | Season start year. |
 | Team | Club name. |
 | GP | Matches played. |
 | W | Wins. |
