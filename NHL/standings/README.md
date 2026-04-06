@@ -1,22 +1,18 @@
 ## Goal
-Build current and historical season standings from the public NHL standings endpoint.
+Provide season standings tables that teachers can use to compare NHL teams, rankings, and point totals.
 
-## Primary Source
+## Source Disclosure
 - [`https://api-web.nhle.com/v1/standings/now`](https://api-web.nhle.com/v1/standings/now)
 - [`https://api-web.nhle.com/v1/standings/{date}`](https://api-web.nhle.com/v1/standings/{date})
 
-## Expected Collection Method
-- Query standings data directly from the NHL JSON endpoint.
-- Use `now` for current-season snapshots.
-- Use the date-based standings endpoint for historical season backfills.
-- Scan backward from the end of the regular season to find the last valid standings snapshot for each season.
-- Map each row to the repo standing schema after normalization.
+## What This Folder Contains
+- One standings CSV per season.
+- A current snapshot file named `nhl_standings_now.csv`.
+- An all-seasons aggregate file named `nhl_standings_all.csv`.
 
-## Legal and Operational Notes
-- This uses a public, unauthenticated endpoint exposed by NHL properties.
-- Do not attempt to scrape hidden page content or circumvent access controls.
-- If the endpoint shape changes, stop and document the change before altering schema.
-- Source-limited gap: the current NHL standings API does not return historical rows for `2004-2005`, so that season remains unavailable in the historical backfill.
+## Notes
+- These CSVs are cleaned and normalized for consistent classroom use.
+- Source-limited gap: the standings source does not return historical rows for `2004-2005`, so that season is unavailable in the historical backfill.
 
 ## Sort Order
 - Season files keep the source standings order returned by the API.
@@ -110,11 +106,11 @@ Build current and historical season standings from the public NHL standings endp
 - `placeName_fr`: place name in French.
 - `teamCommonName_fr`: common team name in French.
 
-## Expected Outputs
-- Current-season standings snapshot
-- A stable `nhl_standings_now.csv` file for always-current examples
-- Historical season files from `1993-1994` onward when range mode is used
-- One all-seasons aggregate file for the full backfill
+## Files Included
+- `nhl_standings_now.csv` for the current season
+- One season file for each backfilled season from `1993-1994` onward when range mode is used
+- `nhl_standings_all.csv` as a combined reference file across seasons
 
 ## Example Notebook
 - [`example.ipynb`](example.ipynb)
+- Loads `nhl_standings_now.csv` and shows a bar chart of team points so teachers can compare current-season standings at a glance.

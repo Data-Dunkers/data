@@ -1,20 +1,19 @@
 ## Goal
-Build league player season stats from the NHL skater summary endpoint.
+Provide player season statistics that teachers can use for examples, comparisons, and charting exercises.
 
-## Source Candidates
+## Source Disclosure
 - [`https://api.nhle.com/stats/rest/en/skater/summary`](https://api.nhle.com/stats/rest/en/skater/summary)
 - [`https://api-web.nhle.com/v1/standings/now`](https://api-web.nhle.com/v1/standings/now)
 - [`https://www.nhl.com/stats`](https://www.nhl.com/stats)
 
-## Expected Collection Method
-- Pull all current-season skater rows from the public NHL stats REST endpoint.
-- Use standings only when a team list or team code lookup is needed.
-- Keep the output at the league level and avoid per-team HTML scraping.
+## What This Folder Contains
+- One player CSV per season.
+- An all-seasons aggregate file named `nhl_player_stats_all.csv`.
+- A current-season file that can be used directly in notebook examples.
 
-## Legal and Operational Notes
-- Keep the process within public, unauthenticated endpoints.
-- Do not use login sessions, hidden tokens, or anti-bot bypasses.
-- Cache responses during experimentation so repeated validation does not hammer the source.
+## Notes
+- These CSVs are cleaned and normalized for consistent classroom use.
+- Source-limited gap: `2004-2005` does not return skater rows from the source, so that season is skipped.
 
 ## Field Glossary
 - `Name`: player name.
@@ -39,11 +38,11 @@ Build league player season stats from the NHL skater summary endpoint.
 - `FO%`: faceoff percentage.
 - `Season`: season identifier.
 
-## Expected Outputs
-- Current-season player CSV
-- Historical season CSVs from 1990-1991 onward when range mode is used
-- One all-seasons aggregate for the full historical backfill
-- Source-limited gap: 2004-2005 returns no skater rows from the endpoint, so that season is skipped.
+## Files Included
+- A current-season player CSV for quick classroom examples
+- One season file for each historical season from 1990-1991 onward when range mode is used
+- `nhl_player_stats_all.csv` as a combined reference file across seasons
 
 ## Example Notebook
 - [`example.ipynb`](example.ipynb)
+- Loads the current-season player CSV and charts the top 20 scorers, which is a simple way to introduce sorting and bar charts.

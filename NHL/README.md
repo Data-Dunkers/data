@@ -1,37 +1,39 @@
 # NHL Data
 
 ## Overview
-This tree contains the production NHL datasets.
+This tree contains the production NHL datasets used for classroom and analysis examples.
 
-- Keep the folder structure stable across refreshes.
-- Prefer public, unauthenticated NHL JSON endpoints over HTML scraping.
-- Use the matching utility scripts in `utils/NHL/` for refreshes.
+The data is organized into four views:
+- `standings/` - season standings tables with team records, points, and ranking fields.
+- `team/` - one row per team per season with season totals.
+- `player/` - one row per player per season with skater statistics.
+- `team_players/` - per-team player files split from the season player data for roster-level examples.
 
 ## Collection Summary
-- Standings come from the public NHL standings endpoint, using `now` for the current snapshot and date-based requests for historical season backfills.
-- Team totals come from the NHL stats REST layer, using live standings for current snapshots and season-end standings snapshots for historical team lists.
-- Player files come from the NHL skater summary REST endpoint.
-- Team-player files are derived from the player season exports by splitting rows into team-specific files, with a one-season legacy fallback for `2004-2005`.
+- Standings are collected from the NHL standings endpoint, with a live snapshot for the current season and historical snapshots for backfilled seasons.
+- Team totals come from the NHL club-stats endpoint and use the standings team list for the matching season.
+- Player files come from the NHL skater summary endpoint.
+- Team-player files are derived from the player season exports by splitting rows into team-specific files.
 
 ## Source Access
-- Standings data is retrieved from [`https://api-web.nhle.com/v1/standings/now`](https://api-web.nhle.com/v1/standings/now) for current-season snapshots and [`https://api-web.nhle.com/v1/standings/{date}`](https://api-web.nhle.com/v1/standings/{date}) for historical season snapshots.
-- Team data is retrieved from [`https://api-web.nhle.com/v1/club-stats/{team}/{season}/{gameType}`](https://api-web.nhle.com/v1/club-stats/{team}/{season}/{gameType}), with team codes resolved from [`https://api-web.nhle.com/v1/standings/now`](https://api-web.nhle.com/v1/standings/now) for current snapshots and [`https://api-web.nhle.com/v1/standings/{date}`](https://api-web.nhle.com/v1/standings/{date}) for historical backfills.
-- Team-player files are derived from the player season CSVs under `player/`.
-- Player data is retrieved from [`https://api.nhle.com/stats/rest/en/skater/summary`](https://api.nhle.com/stats/rest/en/skater/summary).
-- Example notebooks in each section show how the CSVs can be loaded from the shared data repository root.
+- Source disclosure for the NHL datasets:
+  - Standings data comes from [`https://api-web.nhle.com/v1/standings/now`](https://api-web.nhle.com/v1/standings/now) and [`https://api-web.nhle.com/v1/standings/{date}`](https://api-web.nhle.com/v1/standings/{date}).
+  - Team data comes from [`https://api-web.nhle.com/v1/club-stats/{team}/{season}/{gameType}`](https://api-web.nhle.com/v1/club-stats/{team}/{season}/{gameType}).
+  - Player data comes from [`https://api.nhle.com/stats/rest/en/skater/summary`](https://api.nhle.com/stats/rest/en/skater/summary).
+- The `team_players/` files are built from the season player CSVs in this same tree.
 
 ## Supporting Documentation
 - [Unofficial NHL API reference](https://github.com/Zmalski/NHL-API-Reference)
 - [NHL stats site](https://www.nhl.com/stats)
 
 ## Section Index
-- [standings/README.md](standings/README.md) - standings source notes and standings field glossary
-- [team/README.md](team/README.md) - team stats source notes and team field glossary
-- [player/README.md](player/README.md) - player stats source notes and player field glossary
-- [team_players/README.md](team_players/README.md) - per-team player split notes, field glossary, and aggregate file rules
+- [standings/README.md](standings/README.md) - what the standings file shows and what each standings column means
+- [team/README.md](team/README.md) - what the team totals show and what each team column means
+- [player/README.md](player/README.md) - what the player totals show and what each player column means
+- [team_players/README.md](team_players/README.md) - how the team-specific player files are organized and what each column means
 
-## Collection Rules
-- Do not bypass authentication, paywalls, or rate limits.
-- Do not scrape rendered HTML if the same data is available from a public JSON endpoint.
-- Keep request volume low and cache intermediate responses during experiments.
-- Preserve official NHL IDs and team codes as the join key across sections.
+## For Teachers
+- Use `standings/` to compare teams within a season.
+- Use `team/` to study team-level totals such as games played, goals, and goalies.
+- Use `player/` to analyze skater performance across seasons.
+- Use `team_players/` when you want a roster-by-team view for classroom examples or filtering exercises.

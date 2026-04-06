@@ -1,22 +1,19 @@
 ## Goal
-Build per-team player season files from the API-backed NHL player exports.
+Provide team-specific player files that teachers can use for roster, filtering, and grouping examples.
 
-## Source
+## Source Disclosure
 - League player season files from [`../player/README.md`](../player/README.md)
-- The player season files themselves are built from the public NHL skater summary endpoint.
+- The player season files themselves are built from the NHL skater summary endpoint.
 - Source-limited fallback for `2004-2005` uses the legacy local NHL team-player files because the player season file does not include usable team codes for that season.
 
-## Expected Collection Method
-- Read one season of NHL player data at a time.
-- Split the rows into one file per team code.
-- Duplicate traded-player rows into each team file when the source row contains multiple team codes.
-- Keep the season folder layout aligned with the old production NHL `team_players` structure.
+## What This Folder Contains
+- One season folder per NHL season.
+- One team CSV per team per season.
+- One all-seasons aggregate file named `nhl_team_players_all.csv`.
 
-## Legal and Operational Notes
-- This uses only public source-backed data.
-- Do not scrape rendered pages or add hidden-source workarounds.
-- If a player season file is missing, stop and document the gap rather than inventing rows.
-- If the season is `2004-2005`, normalize the legacy local NHL team-player files into the current schema instead of leaving the season blank.
+## Notes
+- These CSVs are cleaned and normalized for consistent classroom use.
+- If a season is unavailable from the source, the gap is documented rather than filled with invented rows.
 
 ## Field Glossary
 - `Name`: player name.
@@ -42,10 +39,11 @@ Build per-team player season files from the API-backed NHL player exports.
 - `Season`: season identifier.
 - `Year`: start year, used only in the all-seasons aggregate file.
 
-## Expected Outputs
+## Files Included
 - One season folder per NHL season
-- One team CSV per team per season
-- One all-seasons aggregate file named `nhl_team_players_all.csv`
+- One team CSV per team per season inside each season folder
+- `nhl_team_players_all.csv` as a combined reference file across all available seasons
 
 ## Example Notebook
 - [`example.ipynb`](example.ipynb)
+- Loads one team-season CSV and charts the top players by points, which is useful for roster-focused classroom examples.

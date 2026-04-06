@@ -1,24 +1,19 @@
 ## Goal
-Build current and historical team summaries from the NHL club-stats endpoint.
+Provide season team totals that teachers can use to compare team performance across years.
 
-## Primary Source
+## Source Disclosure
 - [`https://api-web.nhle.com/v1/club-stats/{team}/{season}/{gameType}`](https://api-web.nhle.com/v1/club-stats/{team}/{season}/{gameType})
-
-## Supporting Source
 - [`https://api-web.nhle.com/v1/standings/now`](https://api-web.nhle.com/v1/standings/now)
 - [`https://api-web.nhle.com/v1/standings/{date}`](https://api-web.nhle.com/v1/standings/{date})
 
-## Expected Collection Method
-- Pull the current team list from the live standings snapshot for `nhl_team_club_stats_now.csv`.
-- Pull the historical team list from the season-end standings snapshot for each backfilled season.
-- Fetch one club-stats payload per team.
-- Aggregate skater and goalie rows into one team summary row.
+## What This Folder Contains
+- One team CSV per season.
+- A current snapshot file named `nhl_team_club_stats_now.csv`.
+- An all-seasons aggregate file named `nhl_team_club_stats_all.csv`.
 
-## Legal and Operational Notes
-- Use only public NHL JSON endpoints.
-- Do not scrape rendered pages when the same data is available from JSON.
-- If a field is not available or not reliable from the source, leave it out of the experiment rather than guessing.
-- Historical season data is source-backed from the NHL API; no legacy local team file is used for the backfill.
+## Notes
+- These CSVs are cleaned and normalized for consistent classroom use.
+- Historical team data is source-backed from the NHL data service; no legacy local team file is used for the backfill.
 
 ## Field Glossary
 - `Team`: full team name from standings.
@@ -52,10 +47,11 @@ Build current and historical team summaries from the NHL club-stats endpoint.
 - `GoalieSO`: total goalie shutouts.
 - `SourceDate`: collection timestamp in UTC.
 
-## Expected Experimental Outputs
-- Current-season team summary CSV (`nhl_team_club_stats_now.csv`)
-- Historical season files from `1993-1994` onward when range mode is used
-- One all-seasons aggregate file for the full backfill (`nhl_team_club_stats_all.csv`)
+## Files Included
+- `nhl_team_club_stats_now.csv` for the current season
+- One season file for each backfilled season from `1993-1994` onward when range mode is used
+- `nhl_team_club_stats_all.csv` as a combined reference file across seasons
 
 ## Example Notebook
 - [`example.ipynb`](example.ipynb)
+- Loads `nhl_team_club_stats_now.csv` and charts skater points by team, which makes it useful for comparing overall team production.
