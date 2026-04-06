@@ -1,83 +1,83 @@
-Name,Team,P,G,A
-Adam Buksa,New England Revolution,23.0,6.0,0.0
-Alan Pulido,Sporting Kansas City,12.0,6.0,5.0
-Alejandro Pozuelo,Toronto FC,23.0,9.0,10.0
-Alexander Ring,New York City FC,0.0,0.0,4.0
-Ali Adnan Kadhim,Vancouver Whitecaps,0.0,0.0,5.0
-Andrés Ríos,San Jose Earthquakes,22.0,5.0,0.0
-Anthony Fontana,Philadelphia Union,17.0,6.0,0.0
-Anton Tinnerholm,New York City FC,0.0,0.0,4.0
-Artur,Columbus Crew,0.0,0.0,4.0
-Ayo Akinola,Toronto FC,15.0,9.0,0.0
-Benji Michel,Orlando City SC,21.0,5.0,0.0
-Bradley Wright-Phillips,LAFC,18.0,8.0,6.0
-Brenden Aaronson,Philadelphia Union,0.0,0.0,7.0
-Brian Rodríguez,LAFC,0.0,0.0,7.0
-Brian White,Red Bull New York,18.0,5.0,0.0
-Chris Mueller,Orlando City SC,22.0,10.0,7.0
-Chris Wondolowski,San Jose Earthquakes,22.0,7.0,0.0
-Cole Bassett,Colorado Rapids,0.0,0.0,5.0
-Cristian Espinoza,San Jose Earthquakes,0.0,0.0,9.0
-Cristian Pavón,LA Galaxy,22.0,10.0,7.0
-Cristian Roldan,Seattle Sounders FC,0.0,0.0,5.0
-Cristián Dájome,Vancouver Whitecaps,0.0,0.0,4.0
-Damir Kreilach,Real Salt Lake,21.0,8.0,0.0
-Daniel Musovski,LAFC,15.0,5.0,0.0
-Darwin Quintero,Houston Dynamo FC,22.0,7.0,10.0
-Daryl Dike,Orlando City SC,17.0,8.0,0.0
-Dax McCarty,Nashville SC,0.0,0.0,4.0
-Diego Chará,Portland Timbers,0.0,0.0,6.0
-Diego Rossi,LAFC,19.0,14.0,0.0
-Diego Valeri,Portland Timbers,22.0,8.0,7.0
-Djordje Mihailovic,Chicago Fire FC,0.0,0.0,6.0
-Emanuel Reynoso,Minnesota United FC,0.0,0.0,7.0
-Erik Hurtado,Sporting Kansas City,15.0,5.0,0.0
-Eryk Williamson,Portland Timbers,0.0,0.0,5.0
-Felipe Mora,Portland Timbers,19.0,7.0,0.0
-Francisco Ginella,LAFC,0.0,0.0,4.0
-Franco Jara,FC Dallas,19.0,7.0,0.0
-Fredy Montero,Vancouver Whitecaps,16.0,5.0,5.0
-Gadi Kinda,Sporting Kansas City,18.0,6.0,0.0
-Gustavo Bou,New England Revolution,18.0,5.0,0.0
-Gyasi Zardes,Columbus Crew,21.0,12.0,4.0
-Jack Price,Colorado Rapids,0.0,0.0,5.0
-Jamiro Monteiro,Philadelphia Union,0.0,0.0,6.0
-Jan Gregus,Minnesota United FC,0.0,0.0,6.0
-Jaroslaw Niezgoda,Portland Timbers,17.0,7.0,0.0
-Jeremy Ebobisse,Portland Timbers,18.0,8.0,0.0
-Jesús Medina,New York City FC,22.0,5.0,0.0
-Johnny Russell,Sporting Kansas City,21.0,6.0,0.0
-Jonathan Lewis,Colorado Rapids,18.0,5.0,0.0
-Jordan Morris,Seattle Sounders FC,22.0,10.0,8.0
-Jorge Villafaña,Portland Timbers,0.0,0.0,5.0
-João Paulo,Seattle Sounders FC,0.0,0.0,5.0
-Kacper Przybylko,Philadelphia Union,23.0,8.0,6.0
-Kaku,Red Bull New York,0.0,0.0,5.0
-Kevin Molino,Minnesota United FC,18.0,9.0,0.0
-Khiry Shelton,Sporting Kansas City,20.0,5.0,0.0
-Kyle Duncan,Red Bull New York,0.0,0.0,4.0
-Latif Blessing,LAFC,0.0,0.0,4.0
-Lewis Morgan,Inter Miami CF,23.0,5.0,8.0
-Lucas Cavallini,Vancouver Whitecaps,18.0,6.0,0.0
-Lucas Zelarayán,Columbus Crew,16.0,6.0,0.0
-Maikel Chang,Real Salt Lake,0.0,0.0,6.0
-Mauricio Pereyra,Orlando City SC,0.0,0.0,8.0
-Maximiliano Urruti,CF Montréal,15.0,5.0,0.0
-Memo Rodríguez,Houston Dynamo FC,21.0,5.0,0.0
-Michael Barrios,FC Dallas,0.0,0.0,6.0
-Nani,Orlando City SC,19.0,6.0,5.0
-Nicolás Lodeiro,Seattle Sounders FC,20.0,7.0,10.0
-Pedro Santos,Columbus Crew,22.0,6.0,8.0
-Raúl Ruidíaz,Seattle Sounders FC,17.0,12.0,0.0
-Robert Beric,Chicago Fire FC,23.0,12.0,0.0
-Robin Lod,Minnesota United FC,20.0,7.0,5.0
-Rodolfo Pizarro,Inter Miami CF,0.0,0.0,5.0
-Romell Quioto,CF Montréal,19.0,8.0,6.0
-Saphir Taïder,CF Montréal,0.0,0.0,6.0
-Sebastian Lletget,LA Galaxy,21.0,6.0,4.0
-Sebastián Blanco,Portland Timbers,0.0,0.0,5.0
-Sergio Santos,Philadelphia Union,21.0,8.0,0.0
-Teal Bunbury,New England Revolution,22.0,8.0,0.0
-Valentín Castellanos,New York City FC,22.0,6.0,0.0
-Yimmi Chará,Portland Timbers,0.0,0.0,8.0
-Álvaro Medrán,Chicago Fire FC,0.0,0.0,6.0
+﻿"Name","Team","P","G","A"
+"Adam Buksa","New England Revolution","23.0","6.0","0.0"
+"Alan Pulido","Sporting Kansas City","12.0","6.0","5.0"
+"Alejandro Pozuelo","Toronto FC","23.0","9.0","10.0"
+"Alexander Ring","New York City FC","0.0","0.0","4.0"
+"Ali Adnan Kadhim","Vancouver Whitecaps","0.0","0.0","5.0"
+"Andrés Ríos","San Jose Earthquakes","22.0","5.0","0.0"
+"Anthony Fontana","Philadelphia Union","17.0","6.0","0.0"
+"Anton Tinnerholm","New York City FC","0.0","0.0","4.0"
+"Artur","Columbus Crew","0.0","0.0","4.0"
+"Ayo Akinola","Toronto FC","15.0","9.0","0.0"
+"Benji Michel","Orlando City SC","21.0","5.0","0.0"
+"Bradley Wright-Phillips","LAFC","18.0","8.0","6.0"
+"Brenden Aaronson","Philadelphia Union","0.0","0.0","7.0"
+"Brian Rodríguez","LAFC","0.0","0.0","7.0"
+"Brian White","Red Bull New York","18.0","5.0","0.0"
+"Chris Mueller","Orlando City SC","22.0","10.0","7.0"
+"Chris Wondolowski","San Jose Earthquakes","22.0","7.0","0.0"
+"Cole Bassett","Colorado Rapids","0.0","0.0","5.0"
+"Cristian Espinoza","San Jose Earthquakes","0.0","0.0","9.0"
+"Cristian Pavón","LA Galaxy","22.0","10.0","7.0"
+"Cristian Roldan","Seattle Sounders FC","0.0","0.0","5.0"
+"Cristián Dájome","Vancouver Whitecaps","0.0","0.0","4.0"
+"Damir Kreilach","Real Salt Lake","21.0","8.0","0.0"
+"Daniel Musovski","LAFC","15.0","5.0","0.0"
+"Darwin Quintero","Houston Dynamo FC","22.0","7.0","10.0"
+"Daryl Dike","Orlando City SC","17.0","8.0","0.0"
+"Dax McCarty","Nashville SC","0.0","0.0","4.0"
+"Diego Chará","Portland Timbers","0.0","0.0","6.0"
+"Diego Rossi","LAFC","19.0","14.0","0.0"
+"Diego Valeri","Portland Timbers","22.0","8.0","7.0"
+"Djordje Mihailovic","Chicago Fire FC","0.0","0.0","6.0"
+"Emanuel Reynoso","Minnesota United FC","0.0","0.0","7.0"
+"Erik Hurtado","Sporting Kansas City","15.0","5.0","0.0"
+"Eryk Williamson","Portland Timbers","0.0","0.0","5.0"
+"Felipe Mora","Portland Timbers","19.0","7.0","0.0"
+"Francisco Ginella","LAFC","0.0","0.0","4.0"
+"Franco Jara","FC Dallas","19.0","7.0","0.0"
+"Fredy Montero","Vancouver Whitecaps","16.0","5.0","5.0"
+"Gadi Kinda","Sporting Kansas City","18.0","6.0","0.0"
+"Gustavo Bou","New England Revolution","18.0","5.0","0.0"
+"Gyasi Zardes","Columbus Crew","21.0","12.0","4.0"
+"Jack Price","Colorado Rapids","0.0","0.0","5.0"
+"Jamiro Monteiro","Philadelphia Union","0.0","0.0","6.0"
+"Jan Gregus","Minnesota United FC","0.0","0.0","6.0"
+"Jaroslaw Niezgoda","Portland Timbers","17.0","7.0","0.0"
+"Jeremy Ebobisse","Portland Timbers","18.0","8.0","0.0"
+"Jesús Medina","New York City FC","22.0","5.0","0.0"
+"Johnny Russell","Sporting Kansas City","21.0","6.0","0.0"
+"Jonathan Lewis","Colorado Rapids","18.0","5.0","0.0"
+"Jordan Morris","Seattle Sounders FC","22.0","10.0","8.0"
+"Jorge Villafaña","Portland Timbers","0.0","0.0","5.0"
+"João Paulo","Seattle Sounders FC","0.0","0.0","5.0"
+"Kacper Przybylko","Philadelphia Union","23.0","8.0","6.0"
+"Kaku","Red Bull New York","0.0","0.0","5.0"
+"Kevin Molino","Minnesota United FC","18.0","9.0","0.0"
+"Khiry Shelton","Sporting Kansas City","20.0","5.0","0.0"
+"Kyle Duncan","Red Bull New York","0.0","0.0","4.0"
+"Latif Blessing","LAFC","0.0","0.0","4.0"
+"Lewis Morgan","Inter Miami CF","23.0","5.0","8.0"
+"Lucas Cavallini","Vancouver Whitecaps","18.0","6.0","0.0"
+"Lucas Zelarayán","Columbus Crew","16.0","6.0","0.0"
+"Maikel Chang","Real Salt Lake","0.0","0.0","6.0"
+"Mauricio Pereyra","Orlando City SC","0.0","0.0","8.0"
+"Maximiliano Urruti","CF Montréal","15.0","5.0","0.0"
+"Memo Rodríguez","Houston Dynamo FC","21.0","5.0","0.0"
+"Michael Barrios","FC Dallas","0.0","0.0","6.0"
+"Nani","Orlando City SC","19.0","6.0","5.0"
+"Nicolás Lodeiro","Seattle Sounders FC","20.0","7.0","10.0"
+"Pedro Santos","Columbus Crew","22.0","6.0","8.0"
+"Raúl Ruidíaz","Seattle Sounders FC","17.0","12.0","0.0"
+"Robert Beric","Chicago Fire FC","23.0","12.0","0.0"
+"Robin Lod","Minnesota United FC","20.0","7.0","5.0"
+"Rodolfo Pizarro","Inter Miami CF","0.0","0.0","5.0"
+"Romell Quioto","CF Montréal","19.0","8.0","6.0"
+"Saphir Taïder","CF Montréal","0.0","0.0","6.0"
+"Sebastian Lletget","LA Galaxy","21.0","6.0","4.0"
+"Sebastián Blanco","Portland Timbers","0.0","0.0","5.0"
+"Sergio Santos","Philadelphia Union","21.0","8.0","0.0"
+"Teal Bunbury","New England Revolution","22.0","8.0","0.0"
+"Valentín Castellanos","New York City FC","22.0","6.0","0.0"
+"Yimmi Chará","Portland Timbers","0.0","0.0","8.0"
+"Álvaro Medrán","Chicago Fire FC","0.0","0.0","6.0"

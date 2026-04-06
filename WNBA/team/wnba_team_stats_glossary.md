@@ -1,6 +1,7 @@
 | Stat | Description                       | Stat | Description                              |
 |------|-----------------------------------|------|------------------------------------------|
 | Team | Team name | GP | Games played |
+| Year | Season start year |  |  |
 | PTS | Points | FGM | Field goals made per game |
 | FGA | Field goals attempted per game | FG% | Field goal percentage |
 | 3PM | Three-point field goals made per game | 3PA | Three-point field goals attempted per game |

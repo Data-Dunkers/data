@@ -1,4 +1,4 @@
-## AHL Data Guide
+## AHL Data Guide (Full One-Pager Draft)
 
 ### Data Dunkers
 
@@ -6,19 +6,19 @@ This dataset is part of the Data Dunkers project, designed to support real-world
 
 ### Overview
 
-This dataset provides structured American Hockey League (AHL) data for analysis using Python, with tools such as pandas and plotly express. The data is organized into four folders, each focusing on a different level of analysis: players, teams, standings, and team-specific rosters.
+This dataset provides structured American Hockey League (AHL) data for analysis using Python, with tools such as pandas and Plotly Express. The data is organized into four folders, each focusing on a different level of analysis: players, teams, standings, and team-specific rosters.
 
-All files are in CSV format and can be accessed directly from GitHub.
+All files are in CSV format.
 
 ### Repository Location
 
 GitHub: [https://github.com/Data-Dunkers/data/tree/main/AHL](https://github.com/Data-Dunkers/data/tree/main/AHL)
 
-Raw CSV access pattern:
+CSV link pattern:
 
-https://raw.githubusercontent.com/Data-Dunkers/data/main/AHL/<folder\>/\<filename\>.csv
+https://raw.githubusercontent.com/Data-Dunkers/data/main/AHL/\<folder\>/\<filename\>.csv
 
-Each folder includes a **glossary file** that explains all column names.
+Each folder includes a **glossary markdown file** that explains all column names.
 
 ### Folder Guide
 
@@ -140,6 +140,11 @@ fig.show()
 * How do standings relate to goal differential?  
 * How is scoring distributed within a team?  
 * How do players and teams change across seasons?
+
+### External Reference
+
+Companion Google Doc (context/background):
+https://docs.google.com/document/d/1sHT0bL4DQyhYKQ2Qa1ps4JFB62WXCbLHcKcMCwAo_7o/edit
 
 ### Important Notes
 

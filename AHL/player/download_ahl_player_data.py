@@ -1,83 +1,132 @@
 import os
+import unicodedata
 from pathlib import Path
-from io import StringIO
 
 import pandas as pd
-import requests
 
-SEASON_LABEL = "2025-2026"  # Default focus season for league snapshot
-LEAGUE_URL = "https://www.quanthockey.com/ahl/en/seasons/2025-26-ahl-players-stats.html"
-MOOSE_URL = "https://www.quanthockey.com/ahl/en/teams/manitoba-moose-players-2025-26-ahl-stats.html"
-OUTPUT_DIR = Path(__file__).resolve().parent
-ARCHIVE_DIR = OUTPUT_DIR / "season_cache"
-UA = "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120 Safari/537.36"
+SEASON_LABEL = os.getenv("AHL_SEASON_LABEL", "2025-2026")
 START_YEAR = int(os.getenv("AHL_START_YEAR", "2000"))
 END_YEAR = int(os.getenv("AHL_END_YEAR", "2026"))
+OUTPUT_DIR = Path(__file__).resolve().parent
+TEAM_PLAYERS_DIR = OUTPUT_DIR.parent / "team_players"
+MOOSE_CODES = {"MTB", "MB", "MOO", "MAN", "MBM"}
+MIN_EXPECTED_ROWS = int(os.getenv("AHL_MIN_EXPECTED_ROWS", "400"))
+CSV_ENCODING = "utf-8-sig"
+REPLACEMENT_CHAR = "\uFFFD"
+MOJIBAKE_TOKENS = ("Ã", "Â", "â€™", "â€“", "â€œ", "â€")
 
 
-def fetch_table(url: str, timeout: int = 12) -> pd.DataFrame:
-    """Download the HTML page and return the first table."""
-    resp = requests.get(url, headers={"User-Agent": UA}, timeout=timeout)
-    resp.raise_for_status()
-    html = resp.text
-    return pd.read_html(StringIO(html))[0]
+def season_label(start_year: int) -> str:
+    return f"{start_year}-{start_year + 1}"
+
+
+def season_from_label(label: str) -> int:
+    return int(label.split("-", maxsplit=1)[0])
+
+
+def load_season_players(label: str) -> pd.DataFrame:
+    season_dir = TEAM_PLAYERS_DIR / label
+    files = sorted(season_dir.glob("*_players.csv"))
+    if not files:
+        return pd.DataFrame()
+    frames = [pd.read_csv(path) for path in files]
+    return pd.concat(frames, ignore_index=True)
+
+
+def normalize_text_columns(df: pd.DataFrame) -> pd.DataFrame:
+    text_cols = df.select_dtypes(include=["object", "string"]).columns
+
+    def clean_text(value: object) -> object:
+        if not isinstance(value, str):
+            return value
+        cleaned = unicodedata.normalize("NFC", value)
+        if REPLACEMENT_CHAR in cleaned:
+            cleaned = cleaned.replace(REPLACEMENT_CHAR, "")
+        if any(token in cleaned for token in MOJIBAKE_TOKENS):
+            try:
+                repaired = cleaned.encode("latin1").decode("utf-8")
+                cleaned = unicodedata.normalize("NFC", repaired)
+            except UnicodeError:
+                pass
+        return cleaned
+
+    for col in text_cols:
+        df[col] = df[col].map(clean_text)
+    return df
+
+
+def validate_frame(df: pd.DataFrame, label: str) -> None:
+    if len(df) < MIN_EXPECTED_ROWS:
+        raise ValueError(
+            f"{label}: only {len(df)} rows (expected at least {MIN_EXPECTED_ROWS})."
+        )
+    text_cols = df.select_dtypes(include=["object", "string"]).columns
+    if not len(text_cols):
+        return
+    has_replacement = (
+        df[text_cols]
+        .astype(str)
+        .apply(lambda c: c.str.contains(REPLACEMENT_CHAR, regex=False))
+        .any()
+        .any()
+    )
+    if has_replacement:
+        raise ValueError(
+            f"{label}: found replacement characters (U+FFFD) in text fields."
+        )
 
 
 def main() -> None:
     OUTPUT_DIR.mkdir(parents=True, exist_ok=True)
-    ARCHIVE_DIR.mkdir(parents=True, exist_ok=True)
 
-    league_df = fetch_table(LEAGUE_URL)
-    league_path = OUTPUT_DIR / f"ahl_player_stats_{SEASON_LABEL}.csv"
-    league_df.to_csv(league_path, index=False)
+    all_frames = []
+    moose_frames = []
+    for year in range(START_YEAR, END_YEAR + 1):
+        label = season_label(year)
+        season_df = load_season_players(label)
+        if season_df.empty:
+            continue
+        season_df = normalize_text_columns(season_df)
+        validate_frame(season_df, label)
 
-    moose_df = fetch_table(MOOSE_URL)
-    moose_path = OUTPUT_DIR / f"MB_Moose_player_stats_{SEASON_LABEL}.csv"
-    moose_df.to_csv(moose_path, index=False)
+        season_path = OUTPUT_DIR / f"ahl_player_stats_{label}.csv"
+        season_df.to_csv(season_path, index=False, encoding=CSV_ENCODING)
+        print(f"Saved {len(season_df)} rows to {season_path.name}")
 
-    # Also include a filtered view from the league table (team code 'MTB')
-    filtered = league_df[league_df["Team"].isin(["MTB", "MB", "MOO", "MAN", "MBM"])]
-    if not filtered.empty:
-        filtered_path = OUTPUT_DIR / f"MB_Moose_player_stats_from_league_{SEASON_LABEL}.csv"
-        filtered.to_csv(filtered_path, index=False)
-        print(f"Saved Moose players (filtered league) to {filtered_path}")
+        season_with_year = season_df.copy()
+        season_with_year.insert(1, "Year", year)
+        if "Name" in season_with_year.columns:
+            ordered_cols = ["Name", "Year"] + [
+                col for col in season_with_year.columns if col not in {"Name", "Year"}
+            ]
+            season_with_year = season_with_year[ordered_cols]
+        all_frames.append(season_with_year)
 
-    # Build all-seasons Moose player stats from team pages, cached per season
-    moose_rows = []
-    consecutive_misses = 0
-    for start in range(START_YEAR, END_YEAR + 1):
-        end = str((start + 1) % 100).zfill(2)
-        season_label = f"{start}-{end}"
-        url = f"https://www.quanthockey.com/ahl/en/teams/manitoba-moose-players-{season_label}-ahl-stats.html"
-        cache_file = ARCHIVE_DIR / f"MB_Moose_player_stats_{season_label}.csv"
+        if "Team" in season_df.columns:
+            moose_df = season_df[season_df["Team"].isin(MOOSE_CODES)].copy()
+            if not moose_df.empty:
+                moose_df.insert(0, "Season", label)
+                moose_frames.append(moose_df)
+                if label == SEASON_LABEL:
+                    moose_path = OUTPUT_DIR / f"MB_Moose_player_stats_{label}.csv"
+                    moose_df.drop(columns=["Season"]).to_csv(
+                        moose_path, index=False, encoding=CSV_ENCODING
+                    )
+                    print(f"Saved {len(moose_df)} rows to {moose_path.name}")
 
-        df = None
-        if cache_file.exists():
-            df = pd.read_csv(cache_file)
-            consecutive_misses = 0
-        else:
-            try:
-                df = fetch_table(url, timeout=8)
-                df.insert(0, "Season", season_label)
-                df.to_csv(cache_file, index=False)
-                consecutive_misses = 0
-            except Exception:
-                consecutive_misses += 1
+    if all_frames:
+        all_df = pd.concat(all_frames, ignore_index=True)
+        all_df = normalize_text_columns(all_df)
+        all_path = OUTPUT_DIR / "ahl_player_stats_all.csv"
+        all_df.to_csv(all_path, index=False, encoding=CSV_ENCODING)
+        print(f"Saved {len(all_df)} rows to {all_path.name}")
 
-        if df is not None:
-            moose_rows.append(df)
-
-        if consecutive_misses >= 6:
-            break
-
-    if moose_rows:
-        moose_all = pd.concat(moose_rows, ignore_index=True)
+    if moose_frames:
+        moose_all = pd.concat(moose_frames, ignore_index=True)
+        moose_all = normalize_text_columns(moose_all)
         moose_all_path = OUTPUT_DIR / "MB_Moose_player_stats_all_seasons.csv"
-        moose_all.to_csv(moose_all_path, index=False)
-        print(f"Saved Moose players (all seasons) to {moose_all_path}")
-
-    print(f"Saved league players to {league_path}")
-    print(f"Saved Moose players (team page) to {moose_path}")
+        moose_all.to_csv(moose_all_path, index=False, encoding=CSV_ENCODING)
+        print(f"Saved {len(moose_all)} rows to {moose_all_path.name}")
 
 
 if __name__ == "__main__":

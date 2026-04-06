@@ -1,15 +1,15 @@
 Rank,TeamCode,Team,W,L,PCT,GF,GA,DIFF
-1,SAS,Saskatchewan Rush,11,4,0.733,178,146,32
-2,VAN,Vancouver Warriors,11,4,0.733,170,138,32
-3,COL,Colorado Mammoth,10,5,0.667,172,151,21
-4,GA,Georgia Swarm,9,5,0.643,144,122,22
-5,TOR,Toronto Rock,9,5,0.643,160,153,7
-6,BUF,Buffalo Bandits,8,6,0.571,156,153,3
-7,OTT,Ottawa Black Bears,8,7,0.533,166,169,-3
-8,LV,Las Vegas Desert Dogs,6,7,0.462,166,166,0
-9,SD,San Diego Seals,6,8,0.429,141,147,-6
-10,ROC,Rochester Knighthawks,5,8,0.385,153,171,-18
-11,HFX,Halifax Thunderbirds,5,9,0.357,145,152,-7
-12,CGY,Calgary Roughnecks,4,10,0.286,146,170,-24
-13,OSH,Oshawa FireWolves,4,10,0.286,139,163,-24
-14,PHI,Philadelphia Wings,3,11,0.214,126,161,-35
+1,COL,Colorado Mammoth,11,5,0.688,185,159,26
+2,VAN,Vancouver Warriors,11,5,0.688,175,153,22
+3,SAS,Saskatchewan Rush,11,5,0.688,185,154,31
+4,GA,Georgia Swarm,10,5,0.667,156,129,27
+5,BUF,Buffalo Bandits,10,6,0.625,179,165,14
+6,TOR,Toronto Rock,10,6,0.625,176,170,6
+7,OTT,Ottawa Black Bears,8,8,0.5,173,181,-8
+8,LV,Las Vegas Desert Dogs,7,8,0.467,184,188,-4
+9,HFX,Halifax Thunderbirds,7,9,0.438,168,168,0
+10,ROC,Rochester Knighthawks,6,9,0.4,181,197,-16
+11,SD,San Diego Seals,6,9,0.4,146,154,-8
+12,OSH,Oshawa FireWolves,5,11,0.313,160,190,-30
+13,CGY,Calgary Roughnecks,4,12,0.25,164,190,-26
+14,PHI,Philadelphia Wings,4,12,0.25,144,178,-34
